@@ -1,65 +1,35 @@
-const roles = [
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    color:white;
+    overflow-x:hidden;
 
-"Cloud Engineer",
-"AWS Engineer",
-"DevOps Engineer",
-"Terraform Specialist",
-"Kubernetes Enthusiast"
+    background: linear-gradient(
+    -45deg,
+    #0f172a,
+    #1e3a8a,
+    #7c3aed,
+    #06b6d4,
+    #ff9900
+    );
 
-];
+    background-size:400% 400%;
 
-let role = 0;
-let char = 0;
-
-const typing =
-document.getElementById("typing");
-
-function type(){
-
-if(char < roles[role].length){
-
-typing.innerHTML +=
-roles[role].charAt(char);
-
-char++;
-
-setTimeout(type,100);
-
-}
-else{
-
-setTimeout(erase,1500);
-
+    animation:gradientBG 15s ease infinite;
 }
 
+@keyframes gradientBG{
+
+0%{
+background-position:0% 50%;
 }
 
-function erase(){
-
-if(char > 0){
-
-typing.innerHTML =
-roles[role].substring(0,char-1);
-
-char--;
-
-setTimeout(erase,50);
-
-}
-else{
-
-role++;
-
-if(role >= roles.length){
-
-role = 0;
-
+50%{
+background-position:100% 50%;
 }
 
-setTimeout(type,300);
-
+100%{
+background-position:0% 50%;
 }
 
 }
-
-type();
