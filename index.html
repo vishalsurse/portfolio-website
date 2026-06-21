@@ -5,94 +5,274 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vishal Surse | Cloud & DevOps Engineer</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-<div id="particles"></div>
+<!-- NAVBAR -->
 
 <nav class="navbar">
 
 <div class="logo">
-☁️ VISHAL
+VISHAL
 </div>
 
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Projects</a></li>
-<li><a href="#">Experience</a></li>
-<li><a href="#">Contact</a></li>
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
 </ul>
 
 </nav>
 
-<section class="hero">
+<!-- HERO SECTION -->
 
-<div class="hero-left">
+<section id="home" class="hero">
 
-<span class="badge">
-AWS Certified Solutions Architect
-</span>
+<div class="hero-content">
 
-<h1>
-Vishal Surse
-</h1>
+<h3>Hello, I'm</h3>
 
-<h2 id="typing"></h2>
+<h1>Vishal Surse</h1>
+
+<h2>
+Cloud & DevOps Engineer
+</h2>
 
 <p>
-
-Cloud Engineer with hands-on experience in
-AWS, Terraform, Docker, Kubernetes,
-Linux and CI/CD Automation.
-
-Passionate about building scalable cloud
-infrastructure and automating deployments.
-
+AWS Certified Solutions Architect with hands-on experience in
+AWS, Terraform, Docker, Kubernetes, Linux and CI/CD automation.
+Passionate about building scalable cloud infrastructure and
+automating deployments.
 </p>
 
-<div class="buttons">
+<div class="hero-buttons">
 
-<a href="#" class="btn primary">
+<a href="assets/resume/Vishal_Surse_Resume.pdf"
+class="btn primary"
+download>
+
 Download Resume
+
 </a>
 
-<a href="#" class="btn secondary">
+<a href="#projects"
+class="btn secondary">
+
 View Projects
+
 </a>
 
 </div>
 
-<div class="socials">
+<div class="social-icons">
 
-<a href="https://github.com/vishalsurse">
+<a href="https://github.com/vishalsurse" target="_blank">
 <i class="fab fa-github"></i>
 </a>
 
-<a href="https://www.linkedin.com/in/vishal-surse-a89987148/">
+<a href="https://www.linkedin.com/in/vishal-surse-a89987148/" target="_blank">
 <i class="fab fa-linkedin"></i>
+</a>
+
+<a href="mailto:vishalsurse1234@gmail.com">
+<i class="fa-solid fa-envelope"></i>
 </a>
 
 </div>
 
 </div>
 
-<div class="hero-right">
+<div class="hero-image">
 
-<div class="profile-card">
+<img src="assets/images/profile.jpg"
+alt="Vishal Surse">
 
-<img src="assets/images/profile.jpg">
+</div>
 
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<h2 class="section-title">
+About Me
+</h2>
+
+<div class="about-card">
+
+<p>
+
+Cloud Engineer with practical experience in AWS cloud services,
+Docker containerization, Terraform Infrastructure as Code,
+Kubernetes fundamentals, Linux administration and CI/CD
+automation.
+
+Currently working at Webasha Technologies where I help
+design, deploy and manage scalable cloud infrastructure.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="section-title">
+Technical Skills
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<i class="fa-brands fa-aws"></i>
+<h3>AWS</h3>
+</div>
+
+<div class="skill-card">
+<i class="fa-solid fa-cloud"></i>
+<h3>Terraform</h3>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-docker"></i>
+<h3>Docker</h3>
+</div>
+
+<div class="skill-card">
+<i class="fa-solid fa-dharmachakra"></i>
+<h3>Kubernetes</h3>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-linux"></i>
+<h3>Linux</h3>
+</div>
+
+<div class="skill-card">
+<i class="fa-solid fa-code-branch"></i>
+<h3>GitHub</h3>
+</div>
+
+<div class="skill-card">
+<i class="fa-solid fa-gears"></i>
+<h3>CI/CD</h3>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-python"></i>
+<h3>Python</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<h2 class="section-title">
+Experience
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
 <h3>Cloud Engineer</h3>
+<p>Webasha Technologies</p>
+<span>Dec 2024 - Present</span>
+</div>
 
-<p>Pune, India</p>
+<div class="timeline-item">
+<h3>QA Analyst</h3>
+<p>Bajaj Finserv</p>
+<span>Jun 2023 - Aug 2024</span>
+</div>
+
+<div class="timeline-item">
+<h3>Trainee</h3>
+<p>Profound Edutech</p>
+<span>Feb 2022 - May 2023</span>
+</div>
+
+<div class="timeline-item">
+<h3>Sports Analyst</h3>
+<p>Hudl Sports</p>
+<span>Jun 2021 - Jan 2022</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">
+Projects
+</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+
+<h3>AWS Serverless Application</h3>
+
+<p>
+Built a scalable serverless application using
+Lambda, API Gateway, DynamoDB, S3 and CloudFront.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>AWS EC2 Deployment</h3>
+
+<p>
+Provisioned EC2 instances, configured Security Groups,
+SSH authentication and secure networking.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Grafana Monitoring</h3>
+
+<p>
+Created monitoring dashboards and alerts for CPU,
+Memory and Disk utilization.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Terraform Infrastructure</h3>
+
+<p>
+Automated AWS infrastructure provisioning using
+Terraform modules and Infrastructure as Code.
+</p>
 
 </div>
 
@@ -100,31 +280,44 @@ View Projects
 
 </section>
 
-<section class="stats">
+<!-- CONTACT -->
 
-<div class="stat-card">
-<h2>2+</h2>
-<p>Years Experience</p>
-</div>
+<section id="contact">
 
-<div class="stat-card">
-<h2>10+</h2>
-<p>Cloud Projects</p>
-</div>
+<h2 class="section-title">
+Contact Me
+</h2>
 
-<div class="stat-card">
-<h2>15+</h2>
-<p>AWS Services</p>
-</div>
+<div class="contact-box">
 
-<div class="stat-card">
-<h2>100%</h2>
-<p>Automation Focus</p>
+<p>
+<i class="fa-solid fa-envelope"></i>
+vishalsurse1234@gmail.com
+</p>
+
+<p>
+<i class="fa-solid fa-phone"></i>
+7028840621
+</p>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Pune, Maharashtra
+</p>
+
 </div>
 
 </section>
 
-<script src="js/script.js"></script>
+<footer>
+
+<p>
+© 2026 Vishal Surse | Cloud & DevOps Engineer
+</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
