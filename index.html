@@ -1,348 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vishal Surse | Cloud Engineer</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vishal Surse | Cloud Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+header h1{
+font-size:4rem;
+color:#38bdf8;
+}
+
+header h2{
+margin-top:10px;
+font-weight:400;
+}
+
+header p{
+margin-top:20px;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 30px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border-radius:20px;
+padding:25px;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.timeline{
+border-left:3px solid #38bdf8;
+padding-left:30px;
+}
+
+.timeline-item{
+margin-bottom:40px;
+}
+
+.timeline-item h3{
+color:#38bdf8;
+}
+
+.skill{
+margin-bottom:25px;
+}
+
+.skill-name{
+display:flex;
+justify-content:space-between;
+margin-bottom:5px;
+}
+
+.progress{
+height:10px;
+background:#1e293b;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progress span{
+display:block;
+height:100%;
+background:#38bdf8;
+}
+
+.cert-card{
+text-align:center;
+padding:30px;
+background:linear-gradient(135deg,#1e293b,#334155);
+border-radius:20px;
+}
+
+.badge{
+display:inline-block;
+padding:8px 15px;
+background:#38bdf8;
+color:black;
+border-radius:20px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+display:block;
+margin-top:10px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:2.5rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
-  <!-- ── NAV ── -->
-  <nav id="navbar">
-    <div class="nav-brand">
-      <span class="brand-bracket">&lt;</span>Vishal Surse<span class="brand-bracket">/&gt;</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+<header>
 
-  <!-- ── HERO ── -->
-  <section id="hero">
-    <canvas id="hero-canvas"></canvas>
-    <div class="hero-content">
-      <p class="hero-eyebrow">AWS Certified · Cloud Engineer · DevOps</p>
-      <h1 class="hero-title">
-        Hi, I'm <span class="accent">Vishal Surse</span>
-      </h1>
-      <p class="hero-sub">
-        I design scalable cloud infrastructure on AWS, containerise applications with Docker &amp; Kubernetes,<br/>
-        and automate everything with Terraform and CI/CD pipelines.
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#contact" class="btn-ghost">Hire Me</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-n" data-target="4">0</span><span class="stat-l">+</span><p>Projects</p></div>
-        <div class="stat"><span class="stat-n" data-target="3">0</span><span class="stat-l">+</span><p>Years Exp.</p></div>
-        <div class="stat"><span class="stat-n" data-target="10">0</span><span class="stat-l">+</span><p>AWS Services</p></div>
-      </div>
-    </div>
-    <div class="scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+<h1>Vishal Surse</h1>
 
-  <!-- ── ABOUT ── -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-tag">// about me</div>
-      <div class="about-grid">
-        <div class="about-visual">
-          <canvas id="globe-canvas"></canvas>
-          <div class="about-badge">
-            <span class="badge-dot"></span>
-            Open to Opportunities
-          </div>
-        </div>
-        <div class="about-text">
-          <h2>Cloud Engineer turning<br/><span class="accent">complexity into clean infra.</span></h2>
-          <p>
-            I'm Vishal Surse, a Cloud Engineer based in Pune, India, currently working at
-            <strong>Webasha Technologies</strong>. I hold an <strong>AWS Certified Solutions Architect</strong>
-            certification and specialise in designing and deploying scalable cloud infrastructure
-            on AWS, containerising applications with Docker, and automating provisioning with Terraform.
-          </p>
-          <p>
-            I have a background that spans QA analysis, sports analytics, and cloud engineering —
-            giving me a sharp eye for quality, data, and systems. I'm fluent in Marathi, Hindi, and English,
-            and I hold a B.E. in E&TC Engineering (2016–2020).
-          </p>
-          <div class="about-pills">
-            <span>AWS Certified SA</span>
-            <span>Terraform IaC</span>
-            <span>Docker</span>
-            <span>Kubernetes</span>
-            <span>Python</span>
-            <span>Linux</span>
-          </div>
-          <a href="assets/Vishal_AWS.pdf" target="https://www.pdffiller.com/en/editor/2081737898?flat_pdf_quality=high&requestHash=a5d01a15d94fce23169bebd8244d51609400802a6d45a128bd6e5e0028b8d469&lang=en&projectId=2081737898#bf21c61dd2f7420d8baaae2917d77e77" class="btn-primary">Download Resume</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<h2>Cloud Engineer | AWS Certified Solutions Architect Associate</h2>
 
-  <!-- ── SKILLS ── -->
-  <section id="skills" class="section section-dark">
-    <div class="container">
-      <div class="section-tag">// tech stack</div>
-      <h2 class="section-title">What I Work With</h2>
-      <div class="skills-grid">
+<p>
+Passionate Cloud Engineer with hands-on experience in AWS, Terraform,
+Docker, Linux, Kubernetes, Monitoring and CI/CD Automation.
+Focused on building scalable, secure and automated cloud solutions.
+</p>
 
-        <div class="skill-card" data-tilt>
-          <div class="skill-icon">☁️</div>
-          <h3>AWS Cloud</h3>
-          <ul>
-            <li>EC2 · S3 · IAM · VPC</li>
-            <li>Lambda · API Gateway</li>
-            <li>DynamoDB · CloudFront</li>
-            <li>Security Groups · Route 53</li>
-          </ul>
-          <div class="card-glow"></div>
-        </div>
+<a href="#" class="btn">Download Resume</a>
 
-        <div class="skill-card" data-tilt>
-          <div class="skill-icon">🐳</div>
-          <h3>Containers & Orchestration</h3>
-          <ul>
-            <li>Docker · Custom Images</li>
-            <li>Multi-container Apps</li>
-            <li>Kubernetes Fundamentals</li>
-            <li>Pods · Deployments</li>
-          </ul>
-          <div class="card-glow"></div>
-        </div>
+</header>
 
-        <div class="skill-card" data-tilt>
-          <div class="skill-icon">⚙️</div>
-          <h3>IaC & CI/CD</h3>
-          <ul>
-            <li>Terraform (AWS Provisioning)</li>
-            <li>CI/CD Pipelines</li>
-            <li>Infrastructure Automation</li>
-            <li>Environment Consistency</li>
-          </ul>
-          <div class="card-glow"></div>
-        </div>
+<section id="about">
 
-        <div class="skill-card" data-tilt>
-          <div class="skill-icon">📡</div>
-          <h3>Monitoring & Scripting</h3>
-          <ul>
-            <li>Grafana · Custom Dashboards</li>
-            <li>CPU · Memory · Disk Alerts</li>
-            <li>Python · Linux · Bash</li>
-            <li>SSH · Key-based Auth</li>
-          </ul>
-          <div class="card-glow"></div>
-        </div>
+<h2 class="section-title">About Me</h2>
 
-      </div>
-    </div>
-  </section>
+<div class="card">
 
-  <!-- ── PROJECTS ── -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-tag">// featured work</div>
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
+<p>
 
-        <div class="project-card featured">
-          <div class="project-header">
-            <span class="project-num">01</span>
-            <div class="project-links">
-              <a href="#" title="Live Demo">↗ Live</a>
-            </div>
-          </div>
-          <h3>Serverless App on AWS</h3>
-          <p>Deployed a full serverless application on AWS using S3 for static hosting, API Gateway to expose REST endpoints, Lambda for business logic, DynamoDB as the NoSQL database, and CloudFront as the CDN for global delivery.</p>
-          <div class="project-tags">
-            <span>AWS Lambda</span><span>API Gateway</span><span>DynamoDB</span><span>S3</span><span>CloudFront</span>
-          </div>
-        </div>
+Currently working as a Cloud Engineer at Webasha Technologies with
+experience in AWS cloud infrastructure, Terraform automation,
+Docker containerization, Linux administration and monitoring solutions.
 
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-num">02</span>
-            <div class="project-links">
-              <a href="#" title="Live Demo">↗ Live</a>
-            </div>
-          </div>
-          <h3>Secure EC2 Web App Deployment</h3>
-          <p>Deployed web applications on AWS by provisioning EC2 instances, configuring Security Groups, setting up SSH key-based authentication, and implementing secure cloud networking best practices.</p>
-          <div class="project-tags">
-            <span>EC2</span><span>VPC</span><span>Security Groups</span><span>SSH</span><span>AWS</span>
-          </div>
-        </div>
+I successfully transitioned from Sports Analyst → QA Analyst → Cloud Engineer
+and continuously enhance my cloud and DevOps expertise.
 
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-num">03</span>
-            <div class="project-links">
-              <a href="#" title="Live Demo">↗ Live</a>
-            </div>
-          </div>
-          <h3>Infrastructure Monitoring with Grafana</h3>
-          <p>Implemented infrastructure monitoring using Grafana with custom dashboards and threshold-based alerts for CPU, memory, and disk utilisation — enabling proactive incident detection.</p>
-          <div class="project-tags">
-            <span>Grafana</span><span>Monitoring</span><span>Alerting</span><span>Linux</span>
-          </div>
-        </div>
+</p>
 
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-num">04</span>
-            <div class="project-links">
-              <a href="#" title="Live Demo">↗ Live</a>
-            </div>
-          </div>
-          <h3>AWS Infrastructure as Code with Terraform</h3>
-          <p>Designed and implemented IaC using Terraform to automate provisioning of AWS resources including EC2, VPC, and Security Groups — improving deployment consistency, scalability, and reducing manual effort.</p>
-          <div class="project-tags">
-            <span>Terraform</span><span>EC2</span><span>VPC</span><span>IaC</span><span>AWS</span>
-          </div>
-        </div>
+</div>
 
-      </div>
-    </div>
-  </section>
+</section>
 
-  <!-- ── EXPERIENCE ── -->
-  <section id="experience" class="section section-dark">
-    <div class="container">
-      <div class="section-tag">// career</div>
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline">
+<section id="certifications">
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-body">
-            <div class="timeline-meta">
-              <span class="tl-company">Webasha Technologies, Pune · Full-time</span>
-              <span class="tl-date">Dec 2024 – Present</span>
-            </div>
-            <h3>Cloud Engineer</h3>
-            <ul>
-              <li>Work with AWS core services including EC2, S3, IAM, and VPC to provision, configure, and manage cloud infrastructure following security best practices.</li>
-              <li>Deploy and manage Docker containers by building custom images and running multi-container applications.</li>
-              <li>Implement secure SSH access and configure key-based authentication across cloud environments.</li>
-              <li>Support Kubernetes concepts including Pods, Deployments, and container orchestration fundamentals.</li>
-              <li>Use Terraform to automate AWS resource provisioning and maintain infrastructure consistency across environments.</li>
-            </ul>
-          </div>
-        </div>
+<h2 class="section-title">Certifications</h2>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-body">
-            <div class="timeline-meta">
-              <span class="tl-company">Bajaj Finserv, Pune · Full-time</span>
-              <span class="tl-date">Jun 2023 – Aug 2024</span>
-            </div>
-            <h3>QA Analyst</h3>
-            <ul>
-              <li>Ensured software quality through systematic testing and accurate defect reporting.</li>
-              <li>Appreciated for accurate task completion and maintaining quality standards.</li>
-              <li>Contributed to team documentation and cross-functional collaboration.</li>
-            </ul>
-          </div>
-        </div>
+<div class="cert-card">
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-body">
-            <div class="timeline-meta">
-              <span class="tl-company">Profound Edutech, Pune · Trainee</span>
-              <span class="tl-date">Feb 2022 – May 2023</span>
-            </div>
-            <h3>Cloud Trainee</h3>
-            <ul>
-              <li>Trained in cloud fundamentals, Linux administration, and DevOps tooling.</li>
-              <li>Recognised for quick learning and adapting rapidly to project workflows.</li>
-            </ul>
-          </div>
-        </div>
+<h2>AWS Certified Solutions Architect – Associate</h2>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-body">
-            <div class="timeline-meta">
-              <span class="tl-company">Hudl Sport India Pvt Ltd, Pune · Full-time</span>
-              <span class="tl-date">Jun 2021 – Jan 2022</span>
-            </div>
-            <h3>Sport Analyst</h3>
-            <ul>
-              <li>Analysed sports video data to generate performance insights for coaching staff.</li>
-              <li>Received positive feedback for punctuality, communication, and teamwork.</li>
-            </ul>
-          </div>
-        </div>
+<p style="margin-top:15px;">
+Validated expertise in designing secure, scalable, highly available and cost-effective AWS cloud solutions.
+</p>
 
-      </div>
-    </div>
-  </section>
+<div class="badge">
+AWS Certified
+</div>
 
-  <!-- ── CONTACT ── -->
-  <section id="contact" class="section">
-    <div class="container contact-container">
-      <div class="section-tag">// get in touch</div>
-      <h2 class="section-title">Let's Build Something</h2>
-      <p class="contact-sub">Open to full-time Cloud / DevOps roles and freelance infrastructure projects.</p>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <a href="mailto:vishalsurse1234@gmail.com" class="contact-link">
-            <span class="cl-icon">✉</span>
-            <div><p class="cl-label">Email</p><p class="cl-val">vishalsurse1234@gmail.com</p></div>
-          </a>
-          <a href="https://linkedin.com/in/vishal-surse" target="_blank" class="contact-link">
-            <span class="cl-icon">in</span>
-            <div><p class="cl-label">LinkedIn</p><p class="cl-val">linkedin.com/in/vishal-surse</p></div>
-          </a>
-          <a href="https://github.com/vishalsurse" target="_blank" class="contact-link">
-            <span class="cl-icon">⬡</span>
-            <div><p class="cl-label">GitHub</p><p class="cl-val">github.com/vishalsurse</p></div>
-          </a>
-          <a href="https://x.com/VSurse83474" target="_blank" class="contact-link">
-            <span class="cl-icon">𝕏</span>
-            <div><p class="cl-label">Twitter / X</p><p class="cl-val">@VSurse83474</p></div>
-          </a>
-          <a href="tel:+917028840621" class="contact-link">
-            <span class="cl-icon">📞</span>
-            <div><p class="cl-label">Phone</p><p class="cl-val">+91 70288 40621</p></div>
-          </a>
-        </div>
-        <form class="contact-form" id="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <textarea placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit" class="btn-primary">Send Message →</button>
-        </form>
-      </div>
-    </div>
-  </section>
+</div>
 
-  <!-- ── FOOTER ── -->
-  <footer>
-    <p>Designed & Built by <span class="accent">Vishal Surse</span> · Pune, India · Deployed on GitHub Pages</p>
-    <p class="footer-mono">// AWS Certified · Keep shipping. Keep learning.</p>
-  </footer>
+</section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="js/main.js"></script>
+<section id="achievements">
+
+<h2 class="section-title">Achievements</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🏆 AWS Certified</h3>
+<p>Achieved AWS Solutions Architect Associate Certification.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Career Transition</h3>
+<p>Successfully moved from QA Analyst to Cloud Engineer.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Terraform Automation</h3>
+<p>Automated AWS infrastructure deployment using IaC.</p>
+</div>
+
+<div class="card">
+<h3>☁️ Serverless Architecture</h3>
+<p>Built scalable serverless applications on AWS.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skill">
+<div class="skill-name">
+<span>AWS</span>
+<span>90%</span>
+</div>
+<div class="progress">
+<span style="width:90%"></span>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">
+<span>Terraform</span>
+<span>85%</span>
+</div>
+<div class="progress">
+<span style="width:85%"></span>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">
+<span>Docker</span>
+<span>85%</span>
+</div>
+<div class="progress">
+<span style="width:85%"></span>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">
+<span>Linux</span>
+<span>90%</span>
+</div>
+<div class="progress">
+<span style="width:90%"></span>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">
+<span>Kubernetes</span>
+<span>70%</span>
+</div>
+<div class="progress">
+<span style="width:70%"></span>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">
+<span>Jenkins</span>
+<span>80%</span>
+</div>
+<div class="progress">
+<span style="width:80%"></span>
+</div>
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Serverless AWS Application</h3>
+<p>
+CloudFront → S3 → API Gateway → Lambda → DynamoDB
+</p>
+</div>
+
+<div class="card">
+<h3>AWS Infrastructure Deployment</h3>
+<p>
+EC2, Security Groups, SSH Access, VPC and Networking.
+</p>
+</div>
+
+<div class="card">
+<h3>Grafana Monitoring</h3>
+<p>
+Monitoring CPU, Memory and Disk utilization with alerts.
+</p>
+</div>
+
+<div class="card">
+<h3>Terraform IaC</h3>
+<p>
+Provisioning AWS infrastructure using Terraform.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="section-title">Career Journey</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Cloud Engineer</h3>
+<p>Webasha Technologies | Dec 2024 - Present</p>
+</div>
+
+<div class="timeline-item">
+<h3>QA Analyst</h3>
+<p>Bajaj Finserv | Jun 2023 - Aug 2024</p>
+</div>
+
+<div class="timeline-item">
+<h3>Trainee</h3>
+<p>Profound Edutech | Feb 2022 - May 2023</p>
+</div>
+
+<div class="timeline-item">
+<h3>Sports Analyst</h3>
+<p>HUDL Sports India Pvt Ltd | Jun 2021 - Jan 2022</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2 class="section-title">Let's Connect</h2>
+
+<a href="mailto:vishalsurse1234@gmail.com">
+📧 vishalsurse1234@gmail.com
+</a>
+
+<a href="https://github.com/vishalsurse" target="_blank">
+💻 GitHub
+</a>
+
+<a href="https://linkedin.com/in/vishal-surse" target="_blank">
+💼 LinkedIn
+</a>
+
+<a href="https://x.com/VSurse83474" target="_blank">
+🐦 X (Twitter)
+</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 Vishal Surse | Cloud Engineer</p>
+
+</footer>
+
 </body>
 </html>
