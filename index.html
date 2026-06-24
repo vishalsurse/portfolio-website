@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal | Cloud & DevOps Engineer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="brand-bracket">&lt;</span>Vishal<span class="brand-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Cloud Engineer · DevOps · AWS</p>
+      <h1 class="hero-title">
+        Building <span class="accent">Scalable</span><br/>Infrastructure
+      </h1>
+      <p class="hero-sub">
+        I architect cloud-native systems, automate pipelines,<br/>
+        and deploy resilient services at scale.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Hire Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n" data-target="15">0</span><span class="stat-l">+</span><p>Projects</p></div>
+        <div class="stat"><span class="stat-n" data-target="3">0</span><span class="stat-l">+</span><p>Years Exp.</p></div>
+        <div class="stat"><span class="stat-n" data-target="8">0</span><span class="stat-l">+</span><p>Cloud Tools</p></div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-tag">// about me</div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <canvas id="globe-canvas"></canvas>
+          <div class="about-badge">
+            <span class="badge-dot"></span>
+            Open to Opportunities
+          </div>
+        </div>
+        <div class="about-text">
+          <h2>I turn complexity into<br/><span class="accent">clean infrastructure.</span></h2>
+          <p>
+            Cloud & DevOps Engineer based in Pune, India. I specialise in 
+            designing and deploying AWS architectures, automating CI/CD workflows, 
+            and building containerised applications that scale without drama.
+          </p>
+          <p>
+            I enjoy the intersection of infrastructure-as-code and developer experience — 
+            making pipelines faster, deployments safer, and on-call shifts quieter.
+          </p>
+          <div class="about-pills">
+            <span>AWS Certified</span>
+            <span>Terraform IaC</span>
+            <span>Docker / K8s</span>
+            <span>CI/CD Automation</span>
+          </div>
+          <a href="assets/resume.pdf" target="_blank" class="btn-primary">Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-tag">// tech stack</div>
+      <h2 class="section-title">What I Work With</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon">☁️</div>
+          <h3>Cloud Platforms</h3>
+          <ul>
+            <li>AWS (EC2, S3, Lambda, RDS)</li>
+            <li>API Gateway · CloudFront</li>
+            <li>Route 53 · CloudWatch</li>
+            <li>IAM · VPC · EKS</li>
+          </ul>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon">⚙️</div>
+          <h3>DevOps & CI/CD</h3>
+          <ul>
+            <li>GitHub Actions · Jenkins</li>
+            <li>Terraform · Ansible</li>
+            <li>Docker · Kubernetes</li>
+            <li>ArgoCD · Helm</li>
+          </ul>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon">📡</div>
+          <h3>Monitoring & SRE</h3>
+          <ul>
+            <li>Prometheus · Grafana</li>
+            <li>ELK Stack</li>
+            <li>CloudWatch Alerts</li>
+            <li>PagerDuty</li>
+          </ul>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-icon">💻</div>
+          <h3>Languages & Scripting</h3>
+          <ul>
+            <li>Python · Bash · Go</li>
+            <li>YAML · JSON · HCL</li>
+            <li>Node.js basics</li>
+            <li>SQL / PostgreSQL</li>
+          </ul>
+          <div class="card-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-tag">// featured work</div>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">01</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">⬡ Code</a>
+              <a href="#" title="Live">↗ Live</a>
+            </div>
+          </div>
+          <h3>AWS Serverless E-Commerce Pipeline</h3>
+          <p>End-to-end serverless architecture using Lambda, API Gateway, DynamoDB, and S3. Includes CI/CD via GitHub Actions with automated blue-green deployments.</p>
+          <div class="project-tags">
+            <span>AWS Lambda</span><span>API Gateway</span><span>DynamoDB</span><span>GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <span class="project-num">02</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">⬡ Code</a>
+              <a href="#" title="Live">↗ Live</a>
+            </div>
+          </div>
+          <h3>Kubernetes Multi-Cluster Monitoring</h3>
+          <p>Deployed a Prometheus + Grafana observability stack across 3 EKS clusters. Custom dashboards, alert policies, and PagerDuty integration for zero-downtime ops.</p>
+          <div class="project-tags">
+            <span>EKS</span><span>Prometheus</span><span>Grafana</span><span>Terraform</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">03</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">⬡ Code</a>
+              <a href="#" title="Live">↗ Live</a>
+            </div>
+          </div>
+          <h3>Infrastructure-as-Code Starter Kit</h3>
+          <p>Modular Terraform modules for provisioning VPCs, ECS clusters, RDS, and CloudFront distributions. Reusable across environments with variable injection.</p>
+          <div class="project-tags">
+            <span>Terraform</span><span>AWS VPC</span><span>ECS</span><span>CloudFront</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-num">04</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">⬡ Code</a>
+              <a href="#" title="Live">↗ Live</a>
+            </div>
+          </div>
+          <h3>RAG System Deployment on GCP</h3>
+          <p>Containerised a LangChain + FAISS + Gemini RAG pipeline with Streamlit UI. Deployed on Cloud Run with automated image builds via Cloud Build.</p>
+          <div class="project-tags">
+            <span>GCP</span><span>Docker</span><span>Cloud Run</span><span>LangChain</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-tag">// career</div>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <span class="tl-company">Your Company · Full-time</span>
+              <span class="tl-date">2023 – Present</span>
+            </div>
+            <h3>Cloud & DevOps Engineer</h3>
+            <ul>
+              <li>Designed and maintained AWS infrastructure serving 100K+ daily users.</li>
+              <li>Reduced deployment time by 60% by migrating to GitHub Actions CI/CD.</li>
+              <li>Provisioned and managed multi-environment EKS clusters using Terraform.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <div class="timeline-meta">
+              <span class="tl-company">Previous Company · Full-time</span>
+              <span class="tl-date">2021 – 2023</span>
+            </div>
+            <h3>Junior DevOps Engineer</h3>
+            <ul>
+              <li>Automated server provisioning with Ansible, cutting onboarding time by 40%.</li>
+              <li>Built Docker Compose setups for local development mirroring production.</li>
+              <li>Monitored EC2 fleets using CloudWatch and responded to P1 incidents.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <div class="section-tag">// get in touch</div>
+      <h2 class="section-title">Let's Build Something</h2>
+      <p class="contact-sub">Open to full-time Cloud/DevOps roles and freelance infrastructure projects.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:vishal@email.com" class="contact-link">
+            <span class="cl-icon">✉</span>
+            <div><p class="cl-label">Email</p><p class="cl-val">vishal@email.com</p></div>
+          </a>
+          <a href="https://linkedin.com/in/vishal" target="_blank" class="contact-link">
+            <span class="cl-icon">in</span>
+            <div><p class="cl-label">LinkedIn</p><p class="cl-val">linkedin.com/in/vishal</p></div>
+          </a>
+          <a href="https://github.com/vishal" target="_blank" class="contact-link">
+            <span class="cl-icon">⬡</span>
+            <div><p class="cl-label">GitHub</p><p class="cl-val">github.com/vishal</p></div>
+          </a>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn-primary">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>Designed & Built by <span class="accent">Vishal</span> · Deployed on GitHub Pages</p>
+    <p class="footer-mono">// Keep shipping. Keep learning.</p>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
